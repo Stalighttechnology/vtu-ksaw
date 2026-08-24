@@ -2,10 +2,10 @@ import { r as __toESM } from "../_runtime.mjs";
 import { t as supabase } from "./client-fpY7n_qM.mjs";
 import { a as require_jsx_runtime, i as require_react, r as useQueryClient, t as useQuery } from "../_libs/react+tanstack__react-query.mjs";
 import { n as SiteHeader } from "./SiteChrome-eS6_GAWM.mjs";
-import { l as SKILLS, t as CATEGORIES } from "./options-BHuxAVPq.mjs";
+import { l as SKILLS, t as CATEGORIES } from "./options-C11kGNDe.mjs";
 import { _ as useNavigate } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as toast } from "../_libs/sonner.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/admin-CXGyY4OJ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/admin-DiSd-uta.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var STATUS_OPTIONS = [
@@ -436,7 +436,7 @@ function AdminPage() {
 			sortDesc
 		],
 		queryFn: async () => {
-			let q = supabase.from("registrations").select("*", { count: "exact" });
+			let q = supabase.from("vtu-ksaw-application").select("*", { count: "exact" });
 			if (filters.status) q = q.eq("status", filters.status);
 			if (filters.course) q = q.eq("skill_sought", filters.course);
 			if (filters.category) q = q.eq("category", filters.category);
@@ -457,7 +457,7 @@ function AdminPage() {
 	const statsQuery = useQuery({
 		queryKey: ["registration-stats"],
 		queryFn: async () => {
-			const { data, error } = await supabase.from("registrations").select("status, skill_sought, gender, category, created_at, cur_district").limit(1e4);
+			const { data, error } = await supabase.from("vtu-ksaw-application").select("status, skill_sought, gender, category, created_at, cur_district").limit(1e4);
 			if (error) throw error;
 			return data ?? [];
 		}
@@ -507,7 +507,7 @@ function AdminPage() {
 	};
 	const remove = async (row) => {
 		if (!window.confirm(`Delete registration of ${row["first_name"]} ${row["last_name"]}? This cannot be undone.`)) return;
-		const { error } = await supabase.from("registrations").delete().eq("id", row.id);
+		const { error } = await supabase.from("vtu-ksaw-application").delete().eq("id", row.id);
 		if (error) {
 			toast.error(error.message);
 			return;
@@ -997,7 +997,7 @@ function EditDialog({ row, onClose, onSaved }) {
 			payload[c.key] = v;
 		}
 		setBusy(true);
-		const { error } = await supabase.from("registrations").update(payload).eq("id", row.id);
+		const { error } = await supabase.from("vtu-ksaw-application").update(payload).eq("id", row.id);
 		setBusy(false);
 		if (error) {
 			toast.error(error.message);

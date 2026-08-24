@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-DDFG6X9w.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-B_guDiAE.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "C:/Users/raghu/Desktop/vtu-ksaw/ksaw/src/routes/__root.tsx",
@@ -7,39 +7,39 @@ var tsrStartManifest = () => ({ routes: {
 			"/_authenticated",
 			"/auth"
 		],
-		preloads: ["/assets/index-BQfC1Pqb.js"],
+		preloads: ["/assets/index-Du45G2qE.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-BQfC1Pqb.js"
+			src: "/assets/index-Du45G2qE.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/raghu/Desktop/vtu-ksaw/ksaw/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-Ns2ft9hn.js",
-			"/assets/SiteChrome-rtHNuhkO.js",
-			"/assets/options-BUORZ6kg.js"
+			"/assets/routes-Dm6z0hXe.js",
+			"/assets/SiteChrome-Bj3ev-Tp.js",
+			"/assets/options-DHEh0M3P.js"
 		]
 	},
 	"/_authenticated": {
 		filePath: "C:/Users/raghu/Desktop/vtu-ksaw/ksaw/src/routes/_authenticated/route.tsx",
 		children: ["/_authenticated/admin"],
-		preloads: ["/assets/route-C5r5a3Up.js"]
+		preloads: ["/assets/route-B6AUcDgf.js"]
 	},
 	"/auth": {
 		filePath: "C:/Users/raghu/Desktop/vtu-ksaw/ksaw/src/routes/auth.tsx",
 		children: void 0,
-		preloads: ["/assets/auth-sX48FTRO.js", "/assets/SiteChrome-rtHNuhkO.js"]
+		preloads: ["/assets/auth-C1Ll5YKg.js", "/assets/SiteChrome-Bj3ev-Tp.js"]
 	},
 	"/_authenticated/admin": {
 		filePath: "C:/Users/raghu/Desktop/vtu-ksaw/ksaw/src/routes/_authenticated/admin.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/admin-DvW06fBY.js",
-			"/assets/SiteChrome-rtHNuhkO.js",
-			"/assets/options-BUORZ6kg.js"
+			"/assets/admin-CPmwcqJc.js",
+			"/assets/SiteChrome-Bj3ev-Tp.js",
+			"/assets/options-DHEh0M3P.js"
 		]
 	}
 } });

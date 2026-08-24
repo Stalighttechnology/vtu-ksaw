@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/options-BHuxAVPq.js
+//#region node_modules/.nitro/vite/services/ssr/assets/options-C11kGNDe.js
 var RELIGIONS = [
 	"Buddhist",
 	"Christian",
@@ -113,12 +113,37 @@ var DISTRICTS = { KARNATAKA: [
 	"YADGIR"
 ] };
 var TALUKS = {
-	"BENGALURU URBAN": [
-		"Bengaluru East",
-		"Bengaluru North",
-		"Bengaluru South",
-		"Anekal",
-		"Yelahanka"
+	"BAGALKOT": [
+		"Bagalkot",
+		"Badami",
+		"Bilagi",
+		"Hunagund",
+		"Jamakhandi",
+		"Mudhol",
+		"Guledgudda",
+		"Rabkavi Banhatti",
+		"Ilkal"
+	],
+	"BALLARI": [
+		"Ballari",
+		"Kurugodu",
+		"Siruguppa",
+		"Sandur",
+		"Kampli"
+	],
+	"BELAGAVI": [
+		"Belagavi",
+		"Athani",
+		"Bailhongal",
+		"Chikkodi",
+		"Gokak",
+		"Hukkeri",
+		"Khanapur",
+		"Ramdurg",
+		"Raybag",
+		"Saundatti",
+		"Nippani",
+		"Kagwad"
 	],
 	"BENGALURU RURAL": [
 		"Devanahalli",
@@ -126,19 +151,242 @@ var TALUKS = {
 		"Hoskote",
 		"Nelamangala"
 	],
-	MYSURU: [
+	"BENGALURU URBAN": [
+		"Anekal",
+		"Bengaluru North",
+		"Bengaluru East",
+		"Bengaluru South",
+		"Yelahanka"
+	],
+	"BIDAR": [
+		"Bidar",
+		"Bhalki",
+		"Humnabad",
+		"Aurad",
+		"Basavakalyan",
+		"Kamalnagar",
+		"Chitgoppa"
+	],
+	"CHAMARAJANAGARA": [
+		"Chamarajanagar",
+		"Gundlupet",
+		"Kollegal",
+		"Yelandur",
+		"Hanur"
+	],
+	"CHIKKABALLAPURA": [
+		"Chikkaballapura",
+		"Bagepalli",
+		"Chintamani",
+		"Gauribidanur",
+		"Sidlaghatta",
+		"Gudibanda"
+	],
+	"CHIKKAMAGALURU": [
+		"Chikkamagaluru",
+		"Kadur",
+		"Koppa",
+		"Mudigere",
+		"Narasimharajapura",
+		"Sringeri",
+		"Tarikere",
+		"Ajjampura"
+	],
+	"CHITRADURGA": [
+		"Chitradurga",
+		"Challakere",
+		"Hiriyur",
+		"Holalkere",
+		"Hosadurga",
+		"Molakalmuru"
+	],
+	"DAKSHINA KANNADA": [
+		"Mangaluru",
+		"Bantwal",
+		"Puttur",
+		"Sullia",
+		"Belthangady",
+		"Moodabidri",
+		"Kadaba"
+	],
+	"DAVANAGERE": [
+		"Davanagere",
+		"Harihar",
+		"Channagiri",
+		"Honnali",
+		"Jagalur"
+	],
+	"DHARWAD": [
+		"Dharwad",
+		"Hubballi",
+		"Kalghatgi",
+		"Kundgol",
+		"Navalgund",
+		"Alnavar",
+		"Annigeri"
+	],
+	"GADAG": [
+		"Gadag",
+		"Ron",
+		"Shirahatti",
+		"Nargund",
+		"Mundargi",
+		"Gajendragad",
+		"Lakshmeshwar"
+	],
+	"HASSAN": [
+		"Hassan",
+		"Alur",
+		"Arkalgud",
+		"Belur",
+		"Channarayapatna",
+		"Holenarasipura",
+		"Sakleshpur",
+		"Yeslur"
+	],
+	"HAVERI": [
+		"Haveri",
+		"Byadgi",
+		"Hangal",
+		"Hirekerur",
+		"Ranibennur",
+		"Savanur",
+		"Shiggaon",
+		"Rattihalli"
+	],
+	"KALABURAGI": [
+		"Kalaburagi",
+		"Afzalpur",
+		"Aland",
+		"Chincholi",
+		"Chitapur",
+		"Jevargi",
+		"Sedam",
+		"Shahabad",
+		"Kalgi",
+		"Kamalapur"
+	],
+	"KODAGU": [
+		"Madikeri",
+		"Somwarpet",
+		"Virajpet"
+	],
+	"KOLAR": [
+		"Kolar",
+		"Bangarapet",
+		"Malur",
+		"Mulbagal",
+		"Srinivaspur",
+		"KGF"
+	],
+	"KOPPAL": [
+		"Koppal",
+		"Gangavathi",
+		"Kushtagi",
+		"Yelburga",
+		"Kanakagiri",
+		"Karatagi",
+		"Kuknoor"
+	],
+	"MANDYA": [
+		"Mandya",
+		"Maddur",
+		"Malavalli",
+		"Srirangapatna",
+		"Krishnarajapet",
+		"Pandavapura",
+		"Nagamangala"
+	],
+	"MYSURU": [
 		"Mysuru",
 		"Nanjangud",
 		"Hunsur",
+		"H D Kote",
+		"Krishnarajanagara",
+		"Periyapatna",
 		"T Narasipura",
-		"Periyapatna"
+		"Saragur",
+		"Saligrama"
 	],
-	BELAGAVI: [
-		"Belagavi",
-		"Bailhongal",
-		"Chikodi",
-		"Gokak",
-		"Athani"
+	"RAICHUR": [
+		"Raichur",
+		"Devadurga",
+		"Lingsugur",
+		"Manvi",
+		"Sindhanur",
+		"Maski",
+		"Sirwar"
+	],
+	"RAMANAGARA": [
+		"Ramanagara",
+		"Channapatna",
+		"Kanakapura",
+		"Magadi"
+	],
+	"SHIVAMOGGA": [
+		"Shivamogga",
+		"Bhadravathi",
+		"Hosanagara",
+		"Sagar",
+		"Shikaripura",
+		"Soraba",
+		"Thirthahalli"
+	],
+	"TUMAKURU": [
+		"Tumakuru",
+		"Chiknayakanahalli",
+		"Kunigal",
+		"Madhugiri",
+		"Sira",
+		"Tiptur",
+		"Turuvekere",
+		"Pavagada",
+		"Koratagere",
+		"Gubbi"
+	],
+	"UDUPI": [
+		"Udupi",
+		"Kundapura",
+		"Karkala",
+		"Kaup",
+		"Brahmavar",
+		"Byndoor",
+		"Hebri"
+	],
+	"UTTARA KANNADA": [
+		"Karwar",
+		"Ankola",
+		"Bhatkal",
+		"Honnavar",
+		"Kumta",
+		"Sirsi",
+		"Siddapur",
+		"Yellapur",
+		"Mundgod",
+		"Haliyal",
+		"Joida",
+		"Dandeli"
+	],
+	"VIJAYAPURA": [
+		"Vijayapura",
+		"Indi",
+		"Muddebihal",
+		"Sindagi",
+		"Babaleshwar",
+		"Basavana Bagewadi",
+		"Chadchan",
+		"Devar Hippargi",
+		"Kolhar",
+		"Nidgundi",
+		"Talikoti"
+	],
+	"YADGIR": [
+		"Yadgir",
+		"Shahapur",
+		"Shorapur",
+		"Gurmitkal",
+		"Hunasagi",
+		"Wadgera"
 	]
 };
 var EDUCATION_LEVELS = [

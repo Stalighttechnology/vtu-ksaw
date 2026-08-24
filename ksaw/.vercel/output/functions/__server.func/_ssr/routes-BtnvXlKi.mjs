@@ -2,8 +2,8 @@ import { r as __toESM } from "../_runtime.mjs";
 import { t as supabase } from "./client-fpY7n_qM.mjs";
 import { a as require_jsx_runtime, i as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { n as SiteHeader, t as PageBanner } from "./SiteChrome-eS6_GAWM.mjs";
-import { a as LAST_SALARY, c as SALUTATIONS, d as SPECIALLY_ABLED_TYPES, f as STATES, g as TRAINING_DURATIONS, h as TALUKS, i as LANGUAGES_KNOWN, l as SKILLS, m as SUBJECTS, n as DISTRICTS, o as PASSING_YEARS, p as STREAMS, r as EDUCATION_LEVELS, s as RELIGIONS, t as CATEGORIES, u as SPECIALLY_ABLED_SUB_TYPES } from "./options-BHuxAVPq.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BVpLgZhI.js
+import { a as LAST_SALARY, c as SALUTATIONS, d as SPECIALLY_ABLED_TYPES, f as STATES, g as TRAINING_DURATIONS, h as TALUKS, i as LANGUAGES_KNOWN, l as SKILLS, m as SUBJECTS, n as DISTRICTS, o as PASSING_YEARS, p as STREAMS, r as EDUCATION_LEVELS, s as RELIGIONS, t as CATEGORIES, u as SPECIALLY_ABLED_SUB_TYPES } from "./options-C11kGNDe.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BtnvXlKi.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Section({ title, variant = "sub", children }) {
@@ -3438,7 +3438,7 @@ function RegistrationPage() {
 		setSubmitError("");
 		setSubmitted(false);
 		try {
-			const { error: dbError } = await supabase.from("registrations").insert({
+			const { error: dbError } = await supabase.from("vtu-ksaw-application").insert({
 				first_name: firstName,
 				last_name: lastName,
 				phone,
