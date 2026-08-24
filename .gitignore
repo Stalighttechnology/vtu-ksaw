@@ -1,0 +1,14 @@
+ksaw/node_modules
+ksaw/dist
+ksaw/dist-ssr
+ksaw/.output
+ksaw/.vinxi
+ksaw/.tanstack
+ksaw/.nitro
+ksaw/*.local
+ksaw/.env
+.env
+node_modules/
+dist/
+.env*
+*.log
