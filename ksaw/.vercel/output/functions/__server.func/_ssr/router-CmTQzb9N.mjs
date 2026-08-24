@@ -1,10 +1,10 @@
 import { r as __toESM } from "../_runtime.mjs";
-import { t as supabase } from "./client-fpY7n_qM.mjs";
+import { t as supabase } from "./client-2lu0DPQ6.mjs";
 import { a as require_jsx_runtime, i as require_react, n as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { A as redirect, c as HeadContent, d as Outlet, f as lazyRouteComponent, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter, v as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as Toaster } from "../_libs/sonner.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-BuL-nPmE.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CmTQzb9N.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Toaster$1 = ({ ...props }) => {
@@ -171,7 +171,7 @@ function RootComponent() {
 		})]
 	});
 }
-var $$splitComponentImporter$3 = () => import("./routes-BtnvXlKi.mjs");
+var $$splitComponentImporter$3 = () => import("./routes-UdQtjBO2.mjs");
 var title$2 = "Registration Form | Karnataka Skill Development Corporation";
 var description$2 = "Register with Kaushalkar for skilling, apprenticeship, employment or self-employment with the Karnataka Skill Development Corporation.";
 var Route$3 = createFileRoute("/")({
@@ -210,7 +210,7 @@ var Route$2 = createFileRoute("/_authenticated")({
 	},
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./auth-BiUFBfGR.mjs");
+var $$splitComponentImporter$1 = () => import("./auth-03KQUFjl.mjs");
 var title$1 = "Admin Sign In | Registration Collection";
 var description$1 = "Secure sign in for university staff to manage student registration submissions.";
 var Route$1 = createFileRoute("/auth")({
@@ -243,7 +243,7 @@ var Route$1 = createFileRoute("/auth")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./admin-DiSd-uta.mjs");
+var $$splitComponentImporter = () => import("./admin-B89tBQkz.mjs");
 var title = "Registrations Dashboard | Admin";
 var description = "Browse, search, filter, edit and export all student registration submissions.";
 var Route = createFileRoute("/_authenticated/admin")({

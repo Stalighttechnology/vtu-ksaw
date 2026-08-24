@@ -1,10 +1,10 @@
 import { r as __toESM } from "../_runtime.mjs";
-import { t as supabase } from "./client-fpY7n_qM.mjs";
+import { t as supabase } from "./client-2lu0DPQ6.mjs";
 import { a as require_jsx_runtime, i as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { n as SiteHeader } from "./SiteChrome-eS6_GAWM.mjs";
 import { _ as useNavigate } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as toast } from "../_libs/sonner.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/auth-BiUFBfGR.js
+//#region node_modules/.nitro/vite/services/ssr/assets/auth-03KQUFjl.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function AuthPage() {

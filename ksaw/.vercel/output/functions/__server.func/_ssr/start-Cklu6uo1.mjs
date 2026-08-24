@@ -1,7 +1,7 @@
-import { t as supabase } from "./client-fpY7n_qM.mjs";
+import { t as supabase } from "./client-2lu0DPQ6.mjs";
 import { n as createMiddleware, t as createCsrfMiddleware } from "./createCsrfMiddleware-B2To0gPJ.mjs";
 import { t as renderErrorPage } from "./ssr.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/start-COb8hGBC.js
+//#region node_modules/.nitro/vite/services/ssr/assets/start-Cklu6uo1.js
 function dedupeSerializationAdapters(deduped, serializationAdapters) {
 	for (let i = 0, len = serializationAdapters.length; i < len; i++) {
 		const current = serializationAdapters[i];
