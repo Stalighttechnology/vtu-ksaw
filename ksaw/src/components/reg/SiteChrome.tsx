@@ -5,15 +5,16 @@ export function SiteHeader() {
   return (
     <header className="kk-header">
       <div className="kk-wrap kk-header-in">
-        <div className="kk-logo">
+        <div className="kk-logo kk-logo-left">
           <img src={govLogo} alt="Government of Karnataka emblem" width={140} height={140} />
-          <img src={univLogo} alt="Visvesvaraya Technological University logo" width={140} height={140} />
         </div>
         <div className="kk-header-titles">
           <p className="kk-header-title">Visvesvaraya Technological University</p>
           <p className="kk-header-sub">Belagavi, Karnataka</p>
         </div>
-        <div className="kk-logo kk-header-spacer" aria-hidden />
+        <div className="kk-logo kk-logo-right">
+          <img src={univLogo} alt="Visvesvaraya Technological University logo" width={175} height={175} />
+        </div>
       </div>
     </header>
   );
