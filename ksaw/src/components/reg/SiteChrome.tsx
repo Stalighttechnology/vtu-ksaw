@@ -6,8 +6,8 @@ export function SiteHeader() {
     <header className="kk-header">
       <div className="kk-wrap kk-header-in">
         <div className="kk-logo">
-          <img src={govLogo} alt="Government of Karnataka emblem" width={58} height={58} />
-          <img src={univLogo} alt="Visvesvaraya Technological University logo" width={58} height={58} />
+          <img src={govLogo} alt="Government of Karnataka emblem" width={140} height={140} />
+          <img src={univLogo} alt="Visvesvaraya Technological University logo" width={140} height={140} />
         </div>
         <div className="kk-header-titles">
           <p className="kk-header-title">Visvesvaraya Technological University</p>
@@ -25,7 +25,7 @@ export function PageBanner() {
       <div className="kk-wrap">
         <h1>Skill Development Registration Form</h1>
         <p>
-          For any clarifications please, visit: <a href="https://vtu.ac.in/skill-development/" target="_blank" rel="noopener noreferrer">vtu.ac.in/skill-development</a>
+          For any clarifications please, email: <a href="mailto:onlineprograms@vtu.ac.in">onlineprograms@vtu.ac.in</a>
         </p>
       </div>
     </section>
