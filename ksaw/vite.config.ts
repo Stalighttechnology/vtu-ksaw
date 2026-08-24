@@ -7,6 +7,18 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    ssr: {
+      noExternal: [
+        "tslib",
+        "@supabase/supabase-js",
+        "@supabase/functions-js",
+        "@supabase/postgrest-js",
+        "@supabase/storage-js",
+        "@supabase/auth-js"
+      ]
+    }
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
