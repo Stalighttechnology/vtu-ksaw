@@ -317,3 +317,4 @@ export const CASTE_NAMES = CASTES.map((c) => c.name);
 export const CASTE_CATEGORIES = Array.from(new Set(CASTES.map((c) => c.category))).filter((cat) => cat !== "nan" && cat !== "NaN");
 
 export const NIGAMAS = Array.from(new Set(CASTES.map((c) => c.nigama))).filter((nig) => nig !== "nan" && nig !== "NaN");
+
