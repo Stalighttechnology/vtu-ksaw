@@ -308,7 +308,7 @@ function RegistrationPage() {
 
     try {
       const { error: dbError } = await supabase
-        .from("vtu-ksaw-application")
+        .from("registrations")
         .insert({
           first_name: firstName,
           last_name: lastName,

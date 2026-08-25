@@ -52,7 +52,7 @@ function AdminPage() {
   const listQuery = useQuery({
     queryKey: ["registrations", filters, page, pageSize, sortDesc],
     queryFn: async () => {
-      let q = supabase.from("vtu-ksaw-application").select("*", { count: "exact" });
+      let q = supabase.from("registrations").select("*", { count: "exact" });
       if (filters.status) q = q.eq("status", filters.status);
       if (filters.course) q = q.eq("skill_sought", filters.course);
       if (filters.category) q = q.eq("category", filters.category);
@@ -77,7 +77,7 @@ function AdminPage() {
     queryKey: ["registration-stats"],
     queryFn: async () => {
       const { data, error } = await supabase
-        .from("vtu-ksaw-application")
+        .from("registrations")
         .select("status, skill_sought, gender, category, created_at, cur_district")
         .limit(10000);
       if (error) throw error;
@@ -123,7 +123,7 @@ function AdminPage() {
 
   const remove = async (row: Row) => {
     if (!window.confirm(`Delete registration of ${row["first_name"]} ${row["last_name"]}? This cannot be undone.`)) return;
-    const { error } = await supabase.from("vtu-ksaw-application").delete().eq("id", row.id);
+    const { error } = await supabase.from("registrations").delete().eq("id", row.id);
     if (error) {
       toast.error(error.message);
       return;
@@ -204,7 +204,7 @@ function AdminPage() {
             <FilterSelect label="Status" value={status} onChange={resetPage(setStatus)} options={STATUS_OPTIONS} />
             <FilterSelect label="Course" value={course} onChange={resetPage(setCourse)} options={SKILLS} />
             <FilterSelect label="Category" value={category} onChange={resetPage(setCategory)} options={CATEGORIES} />
-            <FilterSelect label="District" value={district} onChange={resetPage(setDistrict)} options={DISTRICTS.KARNATAKA} />
+            <FilterSelect label="District" value={district} onChange={resetPage(setDistrict)} options={DISTRICTS["KARNATAKA"] ?? []} />
             <FilterSelect label="Nigama" value={nigama} onChange={resetPage(setNigama)} options={NIGAMAS} />
           </div>
 
@@ -543,7 +543,7 @@ function EditDialog({ row, onClose, onSaved }: { row: Row; onClose: () => void; 
       payload[c.key] = v;
     }
     setBusy(true);
-    const { error } = await supabase.from("vtu-ksaw-application").update(payload as never).eq("id", row.id);
+    const { error } = await supabase.from("registrations").update(payload as never).eq("id", row.id);
     setBusy(false);
     if (error) {
       toast.error(error.message);
