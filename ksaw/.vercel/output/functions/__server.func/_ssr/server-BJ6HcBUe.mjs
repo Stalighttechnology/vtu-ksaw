@@ -81,7 +81,7 @@ var HEADERS = { TSS_SHELL: "X-TSS_SHELL" };
 * the dev styles URL for route-scoped CSS collection.
 */
 async function getStartManifest(matchedRoutes) {
-	const { tsrStartManifest } = await import("../_tanstack-start-manifest_v-B_guDiAE.mjs");
+	const { tsrStartManifest } = await import("../_tanstack-start-manifest_v-CClVNOYW.mjs");
 	const startManifest = tsrStartManifest();
 	let routes = startManifest.routes;
 	routes[rootRouteId];
@@ -1109,7 +1109,7 @@ var getBaseManifest = getProdBaseManifest;
 var createEarlyHintsForRequest = createEarlyHintsCollector;
 async function loadEntries() {
 	const [routerEntry, startEntry, pluginAdapters] = await Promise.all([
-		import("./router-CmTQzb9N.mjs"),
+		import("./router-DZuX1Afv.mjs"),
 		import("./start-Cklu6uo1.mjs"),
 		import("./empty-plugin-adapters-D9UWiqvJ.mjs")
 	]);

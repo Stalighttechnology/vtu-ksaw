@@ -4,7 +4,7 @@ import { a as require_jsx_runtime, i as require_react, n as QueryClientProvider 
 import { A as redirect, c as HeadContent, d as Outlet, f as lazyRouteComponent, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter, v as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as Toaster } from "../_libs/sonner.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CmTQzb9N.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DZuX1Afv.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Toaster$1 = ({ ...props }) => {
@@ -19,7 +19,7 @@ var Toaster$1 = ({ ...props }) => {
 		...props
 	});
 };
-var styles_default = "/assets/styles-lB5mUh7z.css";
+var styles_default = "/assets/styles-ChKvEsAt.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -171,7 +171,7 @@ function RootComponent() {
 		})]
 	});
 }
-var $$splitComponentImporter$3 = () => import("./routes-UdQtjBO2.mjs");
+var $$splitComponentImporter$3 = () => import("./routes-Cz5rRFbC.mjs");
 var title$2 = "Registration Form | Karnataka Skill Development Corporation";
 var description$2 = "Register with Kaushalkar for skilling, apprenticeship, employment or self-employment with the Karnataka Skill Development Corporation.";
 var Route$3 = createFileRoute("/")({
@@ -243,7 +243,7 @@ var Route$1 = createFileRoute("/auth")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./admin-B89tBQkz.mjs");
+var $$splitComponentImporter = () => import("./admin-BGiKcazq.mjs");
 var title = "Registrations Dashboard | Admin";
 var description = "Browse, search, filter, edit and export all student registration submissions.";
 var Route = createFileRoute("/_authenticated/admin")({

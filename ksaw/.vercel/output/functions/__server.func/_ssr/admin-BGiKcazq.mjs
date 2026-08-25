@@ -2,10 +2,10 @@ import { r as __toESM } from "../_runtime.mjs";
 import { t as supabase } from "./client-2lu0DPQ6.mjs";
 import { a as require_jsx_runtime, i as require_react, r as useQueryClient, t as useQuery } from "../_libs/react+tanstack__react-query.mjs";
 import { n as SiteHeader } from "./SiteChrome-eS6_GAWM.mjs";
-import { l as SKILLS, t as CATEGORIES } from "./options-C11kGNDe.mjs";
+import { a as DISTRICTS, i as CATEGORIES, l as NIGAMAS, p as SKILLS } from "./castes-DilvKwEs.mjs";
 import { _ as useNavigate } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as toast } from "../_libs/sonner.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/admin-B89tBQkz.js
+//#region node_modules/.nitro/vite/services/ssr/assets/admin-BGiKcazq.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var STATUS_OPTIONS = [
@@ -415,6 +415,7 @@ function AdminPage() {
 	const [course, setCourse] = (0, import_react.useState)("");
 	const [category, setCategory] = (0, import_react.useState)("");
 	const [district, setDistrict] = (0, import_react.useState)("");
+	const [nigama, setNigama] = (0, import_react.useState)("");
 	const [sortDesc, setSortDesc] = (0, import_react.useState)(true);
 	const [page, setPage] = (0, import_react.useState)(0);
 	const [pageSize, setPageSize] = (0, import_react.useState)(25);
@@ -425,7 +426,8 @@ function AdminPage() {
 		status,
 		course,
 		category,
-		district
+		district,
+		nigama
 	};
 	const listQuery = useQuery({
 		queryKey: [
@@ -441,6 +443,7 @@ function AdminPage() {
 			if (filters.course) q = q.eq("skill_sought", filters.course);
 			if (filters.category) q = q.eq("category", filters.category);
 			if (filters.district) q = q.ilike("cur_district", `%${filters.district}%`);
+			if (filters.nigama) q = q.eq("nigama", filters.nigama);
 			if (filters.search) {
 				const s = filters.search.replace(/[%,()]/g, "");
 				q = q.or(`first_name.ilike.%${s}%,last_name.ilike.%${s}%,email.ilike.%${s}%,phone.ilike.%${s}%,cur_city.ilike.%${s}%,cur_district.ilike.%${s}%`);
@@ -604,7 +607,7 @@ function AdminPage() {
 						className: "mt-5 rounded-lg border border-border bg-card p-3 sm:p-4",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "grid gap-3 md:grid-cols-2 xl:grid-cols-6",
+								className: "grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-7",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "xl:col-span-2",
@@ -638,17 +641,18 @@ function AdminPage() {
 										onChange: resetPage(setCategory),
 										options: CATEGORIES
 									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
-										className: "ctrl-label",
-										htmlFor: "district",
-										children: "District"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
-										id: "district",
-										className: "form-ctrl",
-										placeholder: "District",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FilterSelect, {
+										label: "District",
 										value: district,
-										onChange: (e) => resetPage(setDistrict)(e.target.value)
-									})] })
+										onChange: resetPage(setDistrict),
+										options: DISTRICTS.KARNATAKA
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FilterSelect, {
+										label: "Nigama",
+										value: nigama,
+										onChange: resetPage(setNigama),
+										options: NIGAMAS
+									})
 								]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
