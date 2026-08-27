@@ -25,9 +25,7 @@ export function PageBanner() {
     <section className="kk-banner">
       <div className="kk-wrap">
         <h1>Skill Development Registration Form</h1>
-        <p>
-          For any clarifications please, email: <a href="mailto:onlineprograms@vtu.ac.in">onlineprograms@vtu.ac.in</a>
-        </p>
+
       </div>
     </section>
   );

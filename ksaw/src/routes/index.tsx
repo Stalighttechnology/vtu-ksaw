@@ -674,7 +674,7 @@ function RegistrationPage() {
                   <TextField
                     label="RD Number"
                     required
-                    placeholder="Rd Number"
+                    placeholder="RD NUMBER"
                     value={rdNumber}
                     onChange={setRdNumber}
                     error={errors["rdNumber"]}
