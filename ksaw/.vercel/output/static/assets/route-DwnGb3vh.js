@@ -1,1 +1,0 @@
-import{b as e,v as t}from"./index-BuXytcTl.js";var n=e(),r=()=>(0,n.jsx)(t,{});export{r as component};
