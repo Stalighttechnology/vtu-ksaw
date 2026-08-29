@@ -14,7 +14,7 @@ export type Database = {
   }
   public: {
     Tables: {
-      registrations: {
+      "vtu-ksaw-application": {
         Row: {
           admin_notes: string | null
           age_proof: string | null

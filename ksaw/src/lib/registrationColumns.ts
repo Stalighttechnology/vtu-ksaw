@@ -6,12 +6,17 @@ export type ColumnDef = {
   options?: readonly string[];
 };
 
-export const STATUS_OPTIONS = ["Pending", "Verified", "Approved", "Rejected"] as const;
+export const STATUS_OPTIONS = ["Pending", "Approved", "Rejected", "Pending Document"] as const;
 
 export const COLUMNS: ColumnDef[] = [
+  { key: "reference_number", label: "Reference ID", group: "Meta" },
+  { key: "saf_number", label: "SAF Number", group: "Meta" },
   { key: "created_at", label: "Submitted On", group: "Meta", type: "date" },
   { key: "status", label: "Status", group: "Meta", type: "select", options: STATUS_OPTIONS },
   { key: "admin_notes", label: "Admin Notes", group: "Meta" },
+
+  { key: "institution_name", label: "College / Institute / University", group: "Institution" },
+  { key: "center_location", label: "Center Location", group: "Institution" },
 
   { key: "first_name", label: "First Name", group: "Personal" },
   { key: "last_name", label: "Last Name", group: "Personal" },
@@ -28,8 +33,9 @@ export const COLUMNS: ColumnDef[] = [
   { key: "category", label: "Category", group: "Personal" },
   { key: "caste", label: "Caste", group: "Personal" },
   { key: "nigama", label: "Nigama", group: "Personal" },
-  { key: "caste_cert_type", label: "Caste Certificate Type", group: "Personal" },
   { key: "rd_number", label: "RD Number", group: "Personal" },
+  { key: "caste_cert_issue_date", label: "Caste Certificate Issue Date", group: "Personal", type: "date" },
+  { key: "caste_cert_expiry_date", label: "Caste Certificate Expiry Date", group: "Personal", type: "date" },
   { key: "caste_proof", label: "Caste Proof", group: "Personal" },
   { key: "aadhaar_number", label: "Aadhaar Number", group: "Personal" },
 
